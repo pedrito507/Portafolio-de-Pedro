@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="Español">
+  <head>
+    <title>Portafolio de Pedro</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+    .w3-row-padding img {margin-bottom: 12px}
+    /* Ajuste el ancho de la barra lateral a 120px */
+    .w3-sidebar {width: 120px;background: #000000;}
+    /* Añadir un margen izquierdo al "contenido de la página" que coincida con el ancho de la barra lateral (120px). */
+    #main {margin-left: 120px}
+    /* Eliminar los márgenes del "contenido de la página" en pantallas pequeñas */
+    @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+    .w3-button {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    </style>
+  </head>
+<body class="w3-black">
+
+<!-- Barra de iconos (barra lateral - oculta en pantallas pequeñas) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Imagen de avatar en la esquina superior izquierda -->
+  <img src="https://i.ibb.co/xGw7d6f/83-C912-C9-1-D1-A-47-CD-86-FD-04720-E5-FD186.png" alt="Foto de Pedro" style="width:100%">
+  <a href="#main" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>SOBRE MI</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACTO</p>
+  </a>
+</nav>
+
+<!-- Navbar en pantallas pequeñas (Oculto en pantallas medianas y grandes) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#home" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">SOBRE MI</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACTO</a>
+  </div>
+</div>
+
+<!-- Contenido de la página -->
+<div class="w3-padding-large" id="main">
+  <!-- Header-->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">Soy</span> Pedro Rios</h1>
+    <p>Estudiante de Logística y autodidacta.</p>
+    <!-- Insertar una imagen de fondo -->
+  </header>
+
+  <!-- Sección sobre mi -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">Pedro Rios</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>Soy una persona que destaca por su atención en cada detalle y mi capacidad para resolver problemas de forma eficaz. Tengo la capacidad de adaptarme rápidamente a los cambios en diferentes circunstancias y de tomar decisiones conscientes y meditadas en situaciones difíciles. En general, soy una persona muy motivada y orientada a los resultados que se esfuerza por hacer una contribución significativa en cualquier función que asuma.
+    </p>
+    <h3 class="w3-padding-16 w3-text-light-grey">Mis Habilidades</h3>
+    <p class="w3-wide">Microsoft Office</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:60%"></div>
+    </div>
+    <p class="w3-wide">Front End</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:25%"></div>
+    </div>
+    <p class="w3-wide">Logística</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    </div><br>
+    
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">1</span><br>
+        Este es mi primer proyecto
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">Tú</span><br>
+        Puedes ser mi primer cliente
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">Sigo</span><br>
+        Aprendiendo
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">Texto</span><br>
+        de ejemplo
+      </div>
+    </div>
+    <a href="https://drive.google.com/file/d/17phvB1lQT23jStoBdhqrTB6QSTnEVlfN/view?usp=share_link" target="_blank">
+      <button class="w3-center w3-button w3-light-grey w3-padding-large w3-center">
+        <i class="fa fa-download" ></i> Descarga mi hoja de vida 
+      </button>
+    </a>
+
+    <!-- Tabla de servicios -->
+    <h3 class="w3-padding-16 w3-text-light-grey">Lo que ofrezco</h3>
+    <div class="w3-row-padding" style="text-align: cemter">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Basico</li>
+          <li class="w3-padding-16">Diseño de páginas Web</li>
+          <li class="w3-padding-16">HTML</li>
+          <li class="w3-padding-16">CSS</li>
+          <li class="w3-padding-16">Javascript</li>
+          <li class="w3-padding-16">
+            <h2>Precio a convenir</h2>
+            <span class="w3-opacity">Contactame para más info</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <a href="#contact">
+            <button href="#contact" class="w3-button w3-white w3-padding-large w3-hover-black">Contactame</button>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Intermedio</li>
+          <li class="w3-padding-16">Marketing</li>
+          <li class="w3-padding-16">Microsoft Office</li>
+          <li class="w3-padding-16">Trabajos en Office</li>
+          <li class="w3-padding-16">Traducciones de Ingles a Español</li>
+          <li class="w3-padding-16">
+            <h2>Precio a convenir</h2>
+            <span class="w3-opacity">Contactame para más info</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <a href="#contact">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Contactame</button>
+            </a>
+          </li>
+        </ul>
+      </div>
+    <!-- Termina tabla de servicios -->
+  </div>
+  <!-- Sección de contacto -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contáctame</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Panamá, Ciudad de Panamá</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Celular: +507 epaaaa todavia no :)</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Correo: riossant14@gmail.com</p>
+    </div><br>
+    <p>Enviame un mensaje, con gusto te contesto:</p>
+
+    <form method="post" action="C:\php\enviar.php.php" target="_blank">
+      <p><input name= "nombre" class="w3-input w3-padding-16" type="text" placeholder="Nombre" required name="Nombre"></p>
+      <p><input name= "correo" class="w3-input w3-padding-16" type="text" placeholder="Correo" required name="Correo"></p>
+      <p><input name= "asunto" class="w3-input w3-padding-16" type="text" placeholder="Asunto" required name="Asunto"></p>
+      <p><input name= "mensaje" class="w3-input w3-padding-16" type="text" placeholder="Mensaje" required name="Mensaje"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> Enviame un mensaje
+        </button>
+      </p>
+    </form>
+  <!-- Termina sección de contacto -->
+  </div>
+  
+<!-- Footer -->
+<footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge w3-center">
+  <h5 class="w3-text-light-grey">Sigueme</h5>
+  <a href="https://www.facebook.com/pedro.str.31" target="_blank" title="Facebook"
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  </a>
+  <a href="https://www.instagram.com/14.pedro/" target="_blank" title="Instagram"
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  </a>
+  <a href="https://www.pinterest.es/pedror507/" target="_blank" title="Pinterest"
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  </a>
+  <a href="https://twitter.com/14Pedror" target="_blank" title="Twitter"
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  </a>
+  <a href="https://www.linkedin.com/in/pedror14/" target="_blank" title="LinkedIn"
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </a>
+ <!-- Termina el footer -->
+</footer>
+</div>
+<!-- Termina el contenido de la página -->
+</body>
+</html>
