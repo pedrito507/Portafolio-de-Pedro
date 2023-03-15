@@ -4,8 +4,8 @@
     <title>Portafolio de Pedro</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw5aXo.woff2">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
     body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
@@ -16,11 +16,6 @@
     #main {margin-left: 120px}
     /* Eliminar los márgenes del "contenido de la página" en pantallas pequeñas */
     @media only screen and (max-width: 600px) {#main {margin-left: 0}}
-    .w3-button {
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto;
-    }
     </style>
   </head>
 <body class="w3-black">
@@ -57,7 +52,7 @@
   <!-- Header-->
   <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
     <h1 class="w3-jumbo"><span class="w3-hide-small">Soy</span> Pedro Rios</h1>
-    <p>Estudiante de Logística y autodidacta.</p>
+    <p style="font-size: 20px;">Estudiante de Logística y autodidacta.</p>
     <!-- Insertar una imagen de fondo -->
   </header>
 
@@ -100,8 +95,25 @@
       </div>
     </div>
     <a href="https://drive.google.com/file/d/17phvB1lQT23jStoBdhqrTB6QSTnEVlfN/view?usp=share_link" target="_blank">
-      <button class="w3-center w3-button w3-light-grey w3-padding-large w3-center">
-        <i class="fa fa-download" ></i> Descarga mi hoja de vida 
+      <button class="download-button" style="padding: 0;">
+        <div class="docs">
+          <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2"
+            stroke="currentColor" height="20" width="20" viewBox="0 0 24 24">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line y2="13" x2="8" y1="13" x1="16"></line>
+            <line y2="17" x2="8" y1="17" x1="16"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg> Descarga mi hoja de vida
+        </div>
+        <div class="download">
+          <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2"
+            stroke="currentColor" height="24" width="24" viewBox="0 0 24 24">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line y2="3" x2="12" y1="15" x1="12"></line>
+          </svg>
+        </div>
       </button>
     </a>
 
@@ -117,11 +129,11 @@
           <li class="w3-padding-16">Javascript</li>
           <li class="w3-padding-16">
             <h2>Precio a convenir</h2>
-            <span class="w3-opacity">Contactame para más info</span>
+            <span class="w3-opacity">Contáctame para más info</span>
           </li>
           <li class="w3-light-grey w3-padding-24">
             <a href="#contact">
-            <button href="#contact" class="w3-button w3-white w3-padding-large w3-hover-black">Contactame</button>
+            <button href="#contact" class="w3-button w3-white w3-padding-large w3-hover-black">Contáctame</button>
             </a>
           </li>
         </ul>
@@ -136,11 +148,11 @@
           <li class="w3-padding-16">Traducciones de Ingles a Español</li>
           <li class="w3-padding-16">
             <h2>Precio a convenir</h2>
-            <span class="w3-opacity">Contactame para más info</span>
+            <span class="w3-opacity">Contáctame para más info</span>
           </li>
           <li class="w3-light-grey w3-padding-24">
             <a href="#contact">
-            <button class="w3-button w3-white w3-padding-large w3-hover-black">Contactame</button>
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Contáctame</button>
             </a>
           </li>
         </ul>
@@ -157,13 +169,14 @@
       <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Celular: +507 epaaaa todavia no :)</p>
       <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Correo: riossant14@gmail.com</p>
     </div><br>
-    <p>Enviame un mensaje, con gusto te contesto:</p>
+    <h4 class="w3-text-light-grey">Enviame un mensaje, con gusto te contesto:</h4>
+    <hr style="width: 450px;" class="w3-opacity">
 
     <form method="post" action="C:\php\enviar.php.php" target="_blank">
-      <p><input name= "nombre" class="w3-input w3-padding-16" type="text" placeholder="Nombre" required name="Nombre"></p>
-      <p><input name= "correo" class="w3-input w3-padding-16" type="text" placeholder="Correo" required name="Correo"></p>
-      <p><input name= "asunto" class="w3-input w3-padding-16" type="text" placeholder="Asunto" required name="Asunto"></p>
-      <p><input name= "mensaje" class="w3-input w3-padding-16" type="text" placeholder="Mensaje" required name="Mensaje"></p>
+      <p class="w3">Nombre<input name= "nombre" class="w3-input w3-padding-16" type="text" placeholder="Nombre" required name="Nombre"></p>
+      <p>Correo<input name= "correo" class="w3-input w3-padding-16" type="text" placeholder="Correo" required name="Correo"></p>
+      <p>Asunto<input name= "asunto" class="w3-input w3-padding-16" type="text" placeholder="Asunto" required name="Asunto"></p>
+      <p>Mensaje:<input name= "mensaje" class="w3-input w3-padding-16" type="text" placeholder="Mensaje" required name="Mensaje"></p>
       <p>
         <button class="w3-button w3-light-grey w3-padding-large" type="submit">
           <i class="fa fa-paper-plane"></i> Enviame un mensaje
